@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <style>
+    *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background:#659287;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+label.logo{
+    color: whitesmoke;
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(207, 214, 222);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+a.active,a:hover{
+    background: rgb(182, 18, 23);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+#main-section {
+    background: url(./asset/house\ 12.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 5% auto;
+    padding: 10%;
+    height: 600px;
+    
+
+}
+/**************one-head*************/
+.one-head{
+    width: 70%;
+    background: rgba(167, 182, 185, 0.551);
+    border: 2px solid transparent;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.4s ease;
+} 
+.one-head:hover{
+    border-color: #2a7a6b;
+  box-shadow: 0 0 20px rgba(42, 122, 107, 0.8), 0 0 40px rgba(42, 122, 107, 0.4);
+  transform: scale(1.02);
+}
+
+
+
+.one-head h1{
+   padding-top: 10%;
+   font-size: 30px;
+   font-family: "Playfair Display", serif;
+}
+
+
+.one-head p{
+  padding: 20px 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  color: rgb(36, 54, 56);
+}
+.one-head p:hover{
+    color: #121313;
+   
+}
+.btn{
+    outline:2px solid #a463137b;
+    font-size: 20px; 
+    padding: 6px 13px;
+    border-radius: 8px;
+    color: rgb(190, 190, 173);
+    background-color: rgb(48, 106, 105);
+    display: inline-block;
+    margin-top: 10px;
+}
+/*******second********/
+#bed{
+    width: 80%;
+    margin: 80px auto;
+}
+.bed{
+    text-align: center;
+    font-size: 4vmin;
+    color:#8B5E3C;
+    font-family: "Playfair Display", serif;
+}
+#b{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.b img{
+    width: 100%;
+    border-radius: 10px;
+}
+.b h4{
+    font-size: 4vmin;
+    color:#4E220F;
+    margin: 20px auto;
+    font-family: "Playfair Display", serif;
+}
+.b p{
+    padding: 0px 20px 20px;
+    color: rgb(23, 100, 135);
+    font-family: "Playfair Display", serif;
+}
+
+/*************third*******************/
+#draw{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./asset/drawing\ room.5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.draw{
+    width: 60%;
+    padding: 50px;
+    color: #91a4a3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.4 ease;
+}
+.draw:hover {
+  border-color: #2a7a6b;
+  box-shadow: 0 0 20px rgba(42, 122, 107, 0.8), 0 0 40px rgba(42, 122, 107, 0.4);
+  transform: scale(1.02);
+}
+
+.draw h1{
+    font-size: 8vmin;
+    color: #fff;
+}
+.draw p {
+    color:#fcfaf7;
+    font-size: 20px;
+    text-align: center;
+}
+
+#room{
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   margin: 50px 5%;
+}
+.room{
+    flex: 1;
+}
+.room h1{
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#D46D25;
+}
+.room p{
+    font-size: 18px;
+    line-height: 1.6;
+    color:#9b7968;
+    padding-bottom: 20px;
+}
+.room-gallery{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.room-gallery img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/***********kitchen**************/
+#kitchen{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+.kitchen h1{
+    background-color:#E7E1B1;
+    font-size: 60px;
+    margin: 0 30px 30px;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    color:#2b2a1f;
+}
+.kitchen-images{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 0 20px;
+}
+.kitchen-images img{
+    width: 30%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.comments{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   padding: 50px 5%;
+}
+.card{
+    background: rgba(219, 219, 230, 0.766);
+    width: 22%;
+    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-bottom-right-radius: 100px; 
+    border-top-left-radius: 100px;   
+}
+.card:hover{
+    border-color: #2a7a6b;
+  box-shadow: 0 0 20px rgba(42, 122, 107, 0.8), 0 0 40px rgba(42, 122, 107, 0.4);
+  transform: scale(1.02);
+}
+
+.card h2{
+    color:#3f2c27;
+    font-size: 25px;
+    padding: 30px 0;
+    font-family: "Playfair Display", serif;
+}
+.card p{
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #8B5E3C;
+}
+
+/**************footer*************/
+.foot{
+    width:100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.foot p{
+    color: whitesmoke;
+    margin: 5px 0;
+}
+
+/***********Animation*************/
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.05);
+}
+.btn:hover{
+    background-color:#a4010f;
+    color: #e3f1efed;
+    font-size: 25px;
+    text-transform: uppercase;
+    outline: #d8cb0e 3px solid;
+   
+    
+}
+
+/******MOBILE VIEW 858px*******/
+@media (max-width:858px){
+
+    body{ 
+        padding-top: 80px; 
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    .checkbtn{
+        display: block;
+    }
+        
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(49, 52, 56, 0.404);
+        top: 80px;
+        left: -100%;
+        text-align:center;
+        transition: all .5s;
+        backdrop-filter: blur(5px);
+        padding-top: 40px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+   
+    nav ul li label{
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    nav ul li label a{
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #check:checked ~ .checkbtn i:before{
+        content: "\f00d";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
+
+   
+    .one-head{
+        width: 90%;
+        height: auto;
+        margin: 10% auto;
+       
+    }
+    .one-head h1{ font-size: 28px; }
+    .one-head p{ font-size: 16px; }
+
+    #b{ flex-direction: column; }
+    .b img{ width: 90%; }
+
+    #room{ flex-direction: column; }
+    .room h1{ font-size: 32px; text-align: center; }
+    .room-gallery{ grid-template-columns: 1fr; }
+    .room-gallery img{ height: 220px; }
+
+    .kitchen-images{ flex-direction: column; align-items: center; }
+    .kitchen-images img{ width: 90%; height: 250px; }
+    .kitchen h1{ font-size: 32px; }
+
+    .comments{ flex-direction: column; align-items: center; }
+    .card{ width: 90%; }
+    
+    .draw{ width: 90%; padding: 20px; }
+    .draw h1{ font-size: 6vmin; }
+}
+   </style>
+
+
+
+</head>
+<body>
+    
+ <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">IFS</label>
+    <ul>
+       <li><label for="check"><a href="#main-section">Home</a></label></li>
+       <li><label for="check"><a href="#bed">Bed</a></label></li>
+       <li><label for="check"><a href="#draw">Launch</a></label></li>
+       <li><label for="check"><a href="#kitchen">Kitchen</a></label></li>
+       <li><label for="check"><a href="#comment">comment</a></label></li>
+       <li><label for="check"><a href="#footer">footer</a></label></li>
+    </ul>
+</nav>
+
+
+<section id="main-section">
+    
+    <div class="one-head">
+        <h1>Best interior design for your home</h1>
+        <p>Interior design, like web design, focuses on combining cohesion with functionality to transform a space. Both rely on pleasing color palettes, logical placement, and maneuverability to create positive visitor experiences. As a result, many aspects of effective interior design translate to stunning websites</p>
+         <a href="#" class="btn">Learn more</a>
+    </div>
+    
+</section>
+<!-------second-page----------->
+<section id="bed">
+    <div class="bed">
+        <h1>Up-comings Bed-Rooms Design</h1>
+        
+         </div>
+         <div id="b">
+            <div class="b">
+                <img src="./asset/bed room 2.jpg" alt="">
+                <h4>New Bed-Room Design</h4>
+                <p>"True bedroom design is about how a space feels the moment you step inside. Our texture-rich bedroom concepts focus on maximizing warmth, intimacy, and personalized charm.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="b">
+                <img src="./asset/bed room 6.jpg" alt="">
+                <h4>New Bed-Room Design</h4>
+                <p>"Experience the perfect fusion of luxury and leisure with our signature master bedroom designs. We believe your bedroom should be an intimate escape—a personalized haven that effortlessly blends contemporary aesthetics with timeless comfort.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+         </div>
+</section>
+<!-------------------drawing room----->
+<section id="draw">
+    <div class="draw">
+        <h1>Drawing room</h1>
+        <p>Modern bedroom design prioritizes a clean, built-in aesthetic where storage, lighting, and furniture blend seamlessly into the architecture.</p>
+         <a href="#" class="btn">Learn more</a>
+    </div>
+</section>
+<!-----------drawing img---------->
+
+<section id="room">
+       <div class="room">
+            <h1>UP COMING NEW DRAWING-ROOM DESIGN AVAILABLE</h1>
+            <p>"Let us help you select the ideal color palettes, textiles, and configurations to transform your main sitting room into a masterpiece of lasting comfort."</p>
+                <a href="#" class="btn">Learn More</a>  
+        </div>
+
+    <div class="room-gallery">
+                <img src="./asset/drawing room.10.jpg" alt="">
+                <img src="./asset/drawing room.7.jpg" alt="">
+                <img src="./asset/drawing room.8.jpg" alt="">
+                <img src="./asset/drawing room.9.jpg" alt="">
+  </div>
+
+   
+</section>
+<!----------kitchen------->
+<section id="kitchen">
+    <div class="kitchen">
+        <h1>Cooking expert visible at kitchen</h1> 
+    </div>
+     
+          <div class="kitchen-images">
+            <img src="./asset/kitchen 3.jpg" alt="">
+            <img src="./asset/kitchen2.jpg" alt="">
+            <img src="./asset/kitchen 4.jpg" alt="">            
+          </div> 
+ </section>
+
+        <!---------comments------->
+    <div class="comments" id="comment">
+            <div class="card">
+                <h2>Your Comment </h2>
+                <p>I love the clean lines and smart use of natural light here.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+             <div class="card">
+                <h2>Your Comment</h2>
+                <p> The color palette feels so warm, peaceful, and welcoming.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Your Comment</h2>
+                <p> Every single room looks like it belongs in a luxury magazine.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Your Comment</h2>
+                <p>The high-quality photos really bring your design work to life.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            
+     </div>
+
+        <!------------footer------>
+
+     <section class="foot" id="footer">
+        <p>123 fifth avenue,ifs 113 pakistan,khi |phone:021_333_123|Email:contact ifs@gmail.com</p>
+        <p>Copyright 2026 outdoor Adventure</p>
+    </section>
+</body>
+</html>
